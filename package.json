@@ -1,0 +1,23 @@
+{
+  "name": "frontend-project-lvl1",
+  "version": "1.0.0",
+  "description": "brain games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shramkoweb/frontend-project-lvl1.git"
+  },
+  "keywords": [
+    "hexlet",
+    "terminal"
+  ],
+  "author": "Serhii Shramko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shramkoweb/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Shramkoweb/frontend-project-lvl1#readme"
+}
