@@ -1,1 +1,1 @@
-console.log('Welcome to the Brain Games!');
+#!/usr/local/env node

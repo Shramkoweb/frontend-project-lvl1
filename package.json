@@ -15,6 +15,9 @@
     "hexlet",
     "terminal"
   ],
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "author": "Serhii Shramko",
   "license": "ISC",
   "bugs": {
