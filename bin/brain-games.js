@@ -1,1 +1,1 @@
-#!/usr/local/env node
+#!/usr/local/bin node
