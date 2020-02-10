@@ -16,7 +16,7 @@
     "terminal"
   ],
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "src/bin/brain-games.js"
   },
   "author": "Serhii Shramko",
   "license": "ISC",
