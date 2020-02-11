@@ -4,3 +4,11 @@
 
 ### Навыки и технологии
 + настройка окружения (cl: gitHub Actions, npm, babel, eslint)
+
+---
+### Brain-Even 
+Игра в которой нужно угадывать чётные и нечётные числа.
+3 раунда, при ошибке игра заканчивается.
+
+Demo:
+[![asciicast](https://asciinema.org/a/7IAtBF4S3AN0vvLIHgsnQDTAU.svg)](https://asciinema.org/a/7IAtBF4S3AN0vvLIHgsnQDTAU)
