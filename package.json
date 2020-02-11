@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "brain games",
   "main": "src/index.js",
   "type": "module",
@@ -16,7 +16,8 @@
     "terminal"
   ],
   "bin": {
-    "brain-games": "src/bin/brain-games.js"
+    "brain-games": "src/bin/brain-games.js",
+    "brain-even": "src/bin/brain-even.js"
   },
   "author": "Serhii Shramko",
   "license": "ISC",
