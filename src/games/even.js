@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import greeting from '../index.js';
+
+import { getRandomNumber, isEven, getUserName } from '../index.js';
 
 const GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no"';
 const ROUNDS = 3;
@@ -8,12 +9,8 @@ const NUMBER_RANGE = {
   MAX: 100,
 };
 
-const isEven = (number) => number % 2 === 0;
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
-
 const initEvenGame = (rounds) => {
-  const playerName = greeting();
+  const playerName = getUserName();
   console.log(GAME_RULES);
 
   do {
