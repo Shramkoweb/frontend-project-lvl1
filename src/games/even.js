@@ -1,38 +1,26 @@
 import readlineSync from 'readline-sync';
 
-import { getRandomNumber, isEven, getUserName } from '../index.js';
+import { playGames } from '../index.js';
+import { NUMBER_RANGE, ROUNDS } from '../constants.js';
+import { getRandomNumber, isEven } from '../utils.js';
 
 const GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no"';
-const ROUNDS = 3;
-const NUMBER_RANGE = {
-  MIN: 1,
-  MAX: 100,
+
+const init = () => {
+  const number = getRandomNumber(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  console.log(`Question: ${number}`);
+
+  const answer = readlineSync.question('Your answer: ');
+
+  if (answer === correctAnswer) {
+    return true;
+  }
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'\n`);
+
+  return false;
 };
 
-const initEvenGame = (rounds) => {
-  const playerName = getUserName();
-  console.log(GAME_RULES);
+const playEven = () => playGames(init, GAME_RULES, ROUNDS);
 
-  do {
-    const number = getRandomNumber(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-    const correctAnswer = isEven(number) ? 'yes' : 'no';
-    console.log(`Question: ${number}`);
-
-    const answer = readlineSync.question('Your answer: ');
-
-    if (answer === correctAnswer) {
-      console.log('Correct!');
-      rounds--;
-      if (rounds === 0) {
-        console.log(`Congratulations, ${playerName}`);
-      }
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-      console.log(`Let's try again, ${playerName}!`);
-      return;
-    }
-  } while (rounds);
-};
-
-export { ROUNDS };
-export default initEvenGame;
+export default playEven;
