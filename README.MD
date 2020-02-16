@@ -27,3 +27,9 @@
 Игра в которой нужно найти наибольший делитель двух чисел
 
 [![asciicast](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd.svg)](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd)
+
+---
+### Brain-Progression 
+Игра в которой нужно найти пропущенное число в арифметической прогрессии.
+
+[![asciicast](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ.svg)](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ)
