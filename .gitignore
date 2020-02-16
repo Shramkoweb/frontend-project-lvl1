@@ -1,17 +1,18 @@
-# Файлы и папки операционной системы
+# Files & folders OS
 .DS_Store
 Thumbs.db
 
-# Файлы редактора
+# Editor & IDE files
 .idea
 *.sublime*
 .vscode
 
-# Вспомогательные файлы
+# Other
 *.log*
 node_modules/
+/package-lock.json
 
-# Папка с собранными файлами проекта
+# Build files & dir
 build/
 
 # Local Netlify folder
