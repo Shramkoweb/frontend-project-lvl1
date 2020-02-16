@@ -1,8 +1,8 @@
 const ROUNDS = 3;
 
 const NUMBER_RANGE = {
-  MIN: 1,
-  MAX: 100,
+  MIN: 0,
+  MAX: 10,
 };
 
 export {
