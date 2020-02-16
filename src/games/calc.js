@@ -2,8 +2,8 @@ import hexletPairs from '@hexlet/pairs';
 
 import { playGame } from '../index.js';
 import { getRandomArbitrary, getRandomNumber } from '../utils.js';
+import { RULE } from '../constants.js';
 
-const GAME_RULES = 'What is the result of the expression?';
 const OPERATORS_AMOUNT = 3;
 
 const generateConditions = () => {
@@ -30,6 +30,6 @@ const generateConditions = () => {
   return hexletPairs.cons(question, answer.toString(10));
 };
 
-const playCalc = () => playGame(GAME_RULES, generateConditions);
+const playCalc = () => playGame(RULE.CALC, generateConditions);
 
 export default playCalc;

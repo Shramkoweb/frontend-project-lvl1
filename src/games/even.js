@@ -2,8 +2,7 @@ import hexletPairs from '@hexlet/pairs';
 
 import { playGame } from '../index.js';
 import { getRandomNumber, isEven } from '../utils.js';
-
-const GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no"';
+import { RULE } from '../constants.js';
 
 const generateConditions = () => {
   const question = getRandomNumber();
@@ -12,6 +11,6 @@ const generateConditions = () => {
   return hexletPairs.cons(question, answer);
 };
 
-const playEven = () => playGame(GAME_RULES, generateConditions);
+const playEven = () => playGame(RULE.EVEN, generateConditions);
 
 export default playEven;
