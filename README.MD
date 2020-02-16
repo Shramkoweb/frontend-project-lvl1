@@ -20,4 +20,10 @@
 ### Brain-Calc 
 Игра в которой нужно написать результат выражения.
 
-[![asciicast](https://asciinema.org/a/7IAtBF4S3AN0vvLIHgsnQDTAU.svg)](https://asciinema.org/a/pz5FPVpqo7Ba0w64bg4Bdfbti)
+[![asciicast](https://asciinema.org/a/pz5FPVpqo7Ba0w64bg4Bdfbti.svg)](https://asciinema.org/a/pz5FPVpqo7Ba0w64bg4Bdfbti)
+
+---
+### Brain-GCD 
+Игра в которой нужно найти наибольший делитель двух чисел
+
+[![asciicast](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd.svg)](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd)
