@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
 import { playGames } from '../index.js';
-import { NUMBER_RANGE, ROUNDS } from '../constants.js';
+import { ROUNDS } from '../constants.js';
 import { getRandomNumber, isEven } from '../utils.js';
 
 const GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const init = () => {
-  const number = getRandomNumber(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const number = getRandomNumber();
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   console.log(`Question: ${number}`);
 
