@@ -2,7 +2,7 @@ const ROUNDS = 3;
 
 const NUMBER_RANGE = {
   MIN: 0,
-  MAX: 10,
+  MAX: 20,
 };
 
 const RULE = {
