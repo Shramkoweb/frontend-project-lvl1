@@ -33,3 +33,9 @@
 Игра в которой нужно найти пропущенное число в арифметической прогрессии.
 
 [![asciicast](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ.svg)](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ)
+
+---
+### Brain-Prime 
+Игра в которой нужно угадать, "простое" ли число или нет.
+
+[![asciicast](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw.svg)](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw)
