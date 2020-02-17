@@ -10,6 +10,7 @@ const RULE = {
   CALC: 'What is the result of the expression?',
   GCD: 'What number is missing in the progression?',
   PROGRESSION: 'What number is missing in the progression?',
+  PRIME: 'Answer "yes" if given number is prime. Otherwise answer "no".',
 };
 
 export {
