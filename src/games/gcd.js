@@ -1,8 +1,14 @@
 import hexletPairs from '@hexlet/pairs';
 
 import { playGame } from '../index.js';
-import { getRandomNumber } from '../utils.js';
-import { RULE } from '../constants.js';
+import { getRandomNumbers } from '../utils.js';
+
+const NUMBER_RANGE = {
+  MIN: 1,
+  MAX: 100,
+};
+
+const RULE = 'Find the greatest common divisor of given numbers.';
 
 const getGCD = (firstNumber, secondNumber) => { // return Greatest common divisor
   if (secondNumber === 0) {
@@ -14,7 +20,9 @@ const getGCD = (firstNumber, secondNumber) => { // return Greatest common diviso
 };
 
 const generateConditions = () => {
-  const question = [getRandomNumber(), getRandomNumber()];
+  const [firstNumber, secondNumber] = getRandomNumbers(2, NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+
+  const question = [firstNumber, secondNumber];
   const answer = getGCD(...question);
   const formattedQuestion = question.join(', ');
 
