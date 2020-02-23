@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import hexletPairs from '@hexlet/pairs';
-import { ROUNDS } from './constants.js';
+
+const NUMBER_OF_ROUNDS = 3;
 
 const getUserName = () => readlineSync.question('May I have your name? ');
 
@@ -31,7 +32,7 @@ const playGame = (rules, conditions) => {
   console.log(`Hello, ${userName}\n`);
   console.log(`${rules}\n`);
 
-  const isWin = playRounds(conditions, ROUNDS);
+  const isWin = playRounds(conditions, NUMBER_OF_ROUNDS);
 
   if (isWin) {
     console.log(`Congratulations, ${userName}!`);

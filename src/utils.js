@@ -1,13 +1,15 @@
-import { NUMBER_RANGE } from './constants.js';
-
-const isEven = (number) => number % 2 === 0;
-
 const getRandomArbitrary = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
-const getRandomNumber = () => getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+const getRandomNumbers = (amount, min, max) => {
+  const result = [];
+  for (let i = 0; i < amount; i += 1) {
+    result.push(getRandomArbitrary(min, max));
+  }
+
+  return result;
+};
 
 export {
   getRandomArbitrary,
-  getRandomNumber,
-  isEven,
+  getRandomNumbers,
 };
