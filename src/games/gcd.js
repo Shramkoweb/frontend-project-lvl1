@@ -1,7 +1,6 @@
-import hexletPairs from '@hexlet/pairs';
-
 import { playGame } from '../index.js';
 import { getRandomNumbers } from '../utils.js';
+import { cons } from '../pairs.js';
 
 const NUMBER_RANGE = {
   MIN: 1,
@@ -26,7 +25,7 @@ const generateConditions = () => {
   const answer = getGCD(...question);
   const formattedQuestion = question.join(', ');
 
-  return hexletPairs.cons(formattedQuestion, answer.toString(10));
+  return cons(formattedQuestion, answer.toString(10));
 };
 
 const playGCD = () => playGame(RULE.GCD, generateConditions);

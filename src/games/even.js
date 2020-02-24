@@ -1,7 +1,6 @@
-import hexletPairs from '@hexlet/pairs';
-
 import { playGame } from '../index.js';
 import { getRandomArbitrary } from '../utils.js';
+import { cons } from '../pairs.js';
 
 const RULE = 'Answer "yes" if the number is even, otherwise answer "no"';
 const NUMBER_RANGE = {
@@ -15,7 +14,7 @@ const generateConditions = () => {
   const question = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
   const answer = isEven(question) ? 'yes' : 'no';
 
-  return hexletPairs.cons(question, answer);
+  return cons(question, answer);
 };
 
 const playEven = () => playGame(RULE, generateConditions);

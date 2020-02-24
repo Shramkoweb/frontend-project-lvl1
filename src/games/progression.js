@@ -1,7 +1,6 @@
-import hexletPairs from '@hexlet/pairs';
-
 import { playGame } from '../index.js';
 import { getRandomArbitrary, getRandomNumbers } from '../utils.js';
+import { cons } from '../pairs.js';
 
 const PROGRESSION_LENGTH = 10;
 const RULE = 'What number is missing in the progression?';
@@ -24,7 +23,7 @@ const generateConditions = () => {
   const answer = progression.splice(hiddenIndex, 1, '..');
   const question = progression.join(' ');
 
-  return hexletPairs.cons(question, answer.toString(10));
+  return cons(question, answer.toString(10));
 };
 
 const playProgression = () => playGame(RULE, generateConditions);

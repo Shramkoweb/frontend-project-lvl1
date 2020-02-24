@@ -1,7 +1,6 @@
-import hexletPairs from '@hexlet/pairs';
-
 import { playGame } from '../index.js';
 import { getRandomArbitrary, getRandomNumbers } from '../utils.js';
+import { cons } from '../pairs.js';
 
 const OPERATORS_AMOUNT = 3;
 const RULE = 'What is the result of the expression?';
@@ -31,7 +30,7 @@ const generateConditions = () => {
       answer = firstNumber * secondNumber;
   }
 
-  return hexletPairs.cons(question, answer.toString(10));
+  return cons(question, answer.toString(10));
 };
 
 const playCalc = () => playGame(RULE, generateConditions);

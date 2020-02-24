@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import hexletPairs from '@hexlet/pairs';
+import { car, cdr } from './pairs.js';
 
 const NUMBER_OF_ROUNDS = 3;
 
@@ -8,8 +8,8 @@ const getUserName = () => readlineSync.question('May I have your name? ');
 const playRounds = (conditions, roundsToWin) => { // return 'false' if gameOver or 'true' if win
   for (let i = 1; i <= roundsToWin; i += 1) {
     const gameConditions = conditions(); // get game conditions pair
-    const question = hexletPairs.car(gameConditions);
-    const answer = hexletPairs.cdr(gameConditions);
+    const question = car(gameConditions);
+    const answer = cdr(gameConditions);
 
     console.log(`Question: ${question}`);
 

@@ -1,7 +1,6 @@
-import hexletPairs from '@hexlet/pairs';
-
 import { playGame } from '../index.js';
 import { getRandomArbitrary } from '../utils.js';
+import { cons } from '../pairs.js';
 
 const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const NUMBER_RANGE = {
@@ -28,7 +27,7 @@ const generateConditions = () => {
   const question = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
   const answer = isPrime(question) ? 'yes' : 'no';
 
-  return hexletPairs.cons(question, answer);
+  return cons(question, answer);
 };
 
 const playPrime = () => playGame(RULE, generateConditions);
