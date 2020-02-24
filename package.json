@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "brain games",
   "main": "src/index.js",
   "type": "module",
