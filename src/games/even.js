@@ -11,10 +11,10 @@ const NUMBER_RANGE = {
 const isEven = (number) => number % 2 === 0;
 
 const generateConditions = () => {
-  const question = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-  const answer = isEven(question) ? 'yes' : 'no';
+  const number = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const answer = isEven(number) ? 'yes' : 'no';
 
-  return cons(question, answer);
+  return cons(number, answer);
 };
 
 const playEven = () => playGame(RULE, generateConditions);

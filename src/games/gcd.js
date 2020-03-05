@@ -22,13 +22,13 @@ const generateConditions = () => {
   const firstNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
   const secondNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
 
-  const question = [firstNumber, secondNumber];
+  const numbers = [firstNumber, secondNumber];
   const answer = getGCD(firstNumber, secondNumber);
-  const formattedQuestion = question.join(', ');
+  const converNumbersToString = numbers.join(', ');
 
-  return cons(formattedQuestion, answer.toString(10));
+  return cons(converNumbersToString, answer.toString(10));
 };
 
-const playGCD = () => playGame(RULE.GCD, generateConditions);
+const playGCD = () => playGame(RULE, generateConditions);
 
 export default playGCD;
