@@ -1,4 +1,4 @@
-import { playGame } from '../index.js';
+import playGame from '../index.js';
 import { getRandomItemFrom, getRandomNumbers } from '../utils.js';
 import { cons } from '../pairs.js';
 
