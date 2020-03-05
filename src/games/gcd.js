@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import { getRandomNumbers } from '../utils.js';
+import { getRandomArbitrary } from '../utils.js';
 import { cons } from '../pairs.js';
 
 const NUMBER_RANGE = {
@@ -9,7 +9,7 @@ const NUMBER_RANGE = {
 
 const RULE = 'Find the greatest common divisor of given numbers.';
 
-const getGCD = (firstNumber, secondNumber) => { // return Greatest common divisor
+const getGCD = (firstNumber, secondNumber) => { // return greatest common divisor
   if (secondNumber === 0) {
     return firstNumber;
   }
@@ -19,10 +19,11 @@ const getGCD = (firstNumber, secondNumber) => { // return Greatest common diviso
 };
 
 const generateConditions = () => {
-  const [firstNumber, secondNumber] = getRandomNumbers(2, NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const firstNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const secondNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
 
   const question = [firstNumber, secondNumber];
-  const answer = getGCD(...question);
+  const answer = getGCD(firstNumber, secondNumber);
   const formattedQuestion = question.join(', ');
 
   return cons(formattedQuestion, answer.toString(10));

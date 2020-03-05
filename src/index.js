@@ -3,9 +3,9 @@ import { car, cdr } from './pairs.js';
 
 const NUMBER_OF_ROUNDS = 3;
 
-const playRounds = (conditions, roundsToWin) => { // return 'false' if gameOver or 'true' if win
+const playRounds = (getGameConditions, roundsToWin) => { // return 'false' if gameOver or 'true' if win
   for (let i = 1; i <= roundsToWin; i += 1) {
-    const gameConditions = conditions(); // get game conditions pair
+    const gameConditions = getGameConditions(); // get game conditions pair
     const question = car(gameConditions);
     const answer = cdr(gameConditions);
 
