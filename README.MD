@@ -24,7 +24,7 @@
 
 ---
 ### Brain-GCD 
-Игра в которой нужно найти наибольший делитель двух чисел
+Игра в которой нужно найти наибольший делитель двух чисел.
 
 [![asciicast](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd.svg)](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd)
 
