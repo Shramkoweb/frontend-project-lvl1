@@ -1,9 +1,9 @@
 import { playGame } from '../index.js';
-import { getRandomArbitrary, getRandomNumbers } from '../utils.js';
+import { getRandomItemFrom, getRandomNumbers } from '../utils.js';
 import { cons } from '../pairs.js';
 
-const OPERATORS_AMOUNT = 3;
 const RULE = 'What is the result of the expression?';
+const OPERATORS = ['+', '-', '*'];
 
 const NUMBER_RANGE = {
   MIN: 0,
@@ -11,22 +11,20 @@ const NUMBER_RANGE = {
 };
 
 const generateConditions = () => {
-  let question; // eslint fix
   let answer; // eslint fix
   const [firstNumber, secondNumber] = getRandomNumbers(2, NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-  const operator = getRandomArbitrary(0, OPERATORS_AMOUNT);
+  const operator = getRandomItemFrom(OPERATORS);
+  const question = `${firstNumber} ${operator} ${secondNumber}`;
+
 
   switch (operator) {
-    case 0:
-      question = `${firstNumber} + ${secondNumber}`;
+    case '+':
       answer = firstNumber + secondNumber;
       break;
-    case 1:
-      question = `${firstNumber} - ${secondNumber}`;
+    case '-':
       answer = firstNumber - secondNumber;
       break;
     default:
-      question = `${firstNumber} * ${secondNumber}`;
       answer = firstNumber * secondNumber;
   }
 
