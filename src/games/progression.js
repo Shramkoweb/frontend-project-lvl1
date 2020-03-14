@@ -5,9 +5,7 @@ import { cons } from '../pairs.js';
 const PROGRESSION_LENGTH = 10;
 const RULE = 'What number is missing in the progression?';
 
-const generateProgression = (length) => {
-  const start = getRandomArbitrary(1, length);
-  const step = getRandomArbitrary(1, length);
+const generateProgression = (start, step, length) => {
   const result = [];
 
   for (let i = 0; i < length; i += 1) {
@@ -18,7 +16,9 @@ const generateProgression = (length) => {
 };
 
 const generateConditions = () => {
-  const numbers = generateProgression(PROGRESSION_LENGTH);
+  const start = getRandomArbitrary(1, PROGRESSION_LENGTH);
+  const step = getRandomArbitrary(1, PROGRESSION_LENGTH);
+  const numbers = generateProgression(start, step, PROGRESSION_LENGTH);
   const hiddenElementIndex = getRandomArbitrary(0, PROGRESSION_LENGTH);
 
   const numbersWithoutHiddenElement = numbers.splice(hiddenElementIndex, 1, '..');
