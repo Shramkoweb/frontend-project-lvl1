@@ -1,4 +1,9 @@
-const getRandomArbitrary = (min, max) => Math.floor(Math.random() * (max - min) + min);
+const getRandomArbitrary = (min, max) => {
+  const ceilMin = Math.ceil(min);
+  const floorMax = Math.floor(max);
+
+  return Math.floor(Math.random() * (floorMax - ceilMin + 1)) + ceilMin;
+};
 
 const getRandomItemFrom = (array) => array[Math.floor(Math.random() * array.length)];
 
