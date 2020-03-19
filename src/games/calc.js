@@ -6,13 +6,13 @@ const RULE = 'What is the result of the expression?';
 const OPERATORS = ['+', '-', '*'];
 
 const NUMBER_RANGE = {
-  MIN: 0,
-  MAX: 15,
+  min: 0,
+  max: 15,
 };
 
 const generateConditions = () => {
-  const firstNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-  const secondNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const firstNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
+  const secondNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
   const operator = getRandomItemFrom(OPERATORS);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
 

@@ -24,10 +24,10 @@ const isPrime = (number) => {
 };
 
 const generateConditions = () => {
-  const randomNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-  const answer = isPrime(randomNumber) ? 'yes' : 'no';
+  const question = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
-  return cons(randomNumber, answer);
+  return cons(question, answer);
 };
 
 const playPrime = () => playGame(RULE, generateConditions);
