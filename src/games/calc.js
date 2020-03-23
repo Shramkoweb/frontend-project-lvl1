@@ -25,8 +25,11 @@ const generateConditions = () => {
     case '-':
       answer = firstNumber - secondNumber;
       break;
-    default:
+    case '*':
       answer = firstNumber * secondNumber;
+      break;
+    default:
+      throw new Error('Incorrect operator');
   }
 
   return cons(question, answer.toString(10));
