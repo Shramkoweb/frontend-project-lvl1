@@ -2,6 +2,12 @@
 ![](https://github.com/Shramkoweb/frontend-project-lvl1/workflows/Lint/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6bfe9a9986b82bffc5a1/maintainability)](https://codeclimate.com/github/Shramkoweb/frontend-project-lvl1/maintainability)
 
+## Установить все зависимости 
++ npm install
+
+## Как запустить игры
++ node `src/bin/pathToGame`
+
 ## Навыки и технологии
 + настройка окружения (cl: gitHub Actions, npm, babel, eslint)
 
