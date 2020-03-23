@@ -21,10 +21,10 @@ const generateConditions = () => {
   const progression = generateProgression(start, step, PROGRESSION_LENGTH);
   const hiddenElementIndex = getRandomArbitrary(0, PROGRESSION_LENGTH);
 
-  const numbersWithoutHiddenElement = progression.splice(hiddenElementIndex, 1, '..');
+  const answer = progression.splice(hiddenElementIndex, 1, '..');
   const question = progression.join(' ');
 
-  return cons(question, numbersWithoutHiddenElement.toString(10));
+  return cons(question, answer.toString(10));
 };
 
 const playProgression = () => playGame(RULE, generateConditions);
