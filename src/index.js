@@ -3,7 +3,7 @@ import { car, cdr } from './pairs.js';
 
 const NUMBER_OF_ROUNDS = 3;
 
-const isGameWin = (getGameConditions, roundsToWin, userName) => {
+const playRounds = (getGameConditions, roundsToWin, userName) => {
   for (let i = 1; i <= roundsToWin; i += 1) {
     const gameConditions = getGameConditions(); // get game conditions pair
     const question = car(gameConditions);
@@ -32,7 +32,7 @@ const playGame = (rulesOfTheGame, getGameConditions) => {
   console.log(`Hello, ${userName}\n`);
   console.log(`${rulesOfTheGame}\n`);
 
-  isGameWin(getGameConditions, NUMBER_OF_ROUNDS, userName);
+  playRounds(getGameConditions, NUMBER_OF_ROUNDS, userName);
 };
 
 export default playGame;

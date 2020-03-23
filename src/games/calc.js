@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import { getRandomArbitrary, getRandomItemFrom } from '../utils.js';
+import getRandomArbitrary from '../utils.js';
 import { cons } from '../pairs.js';
 
 const RULE = 'What is the result of the expression?';
@@ -13,7 +13,7 @@ const NUMBER_RANGE = {
 const generateConditions = () => {
   const firstNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
   const secondNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
-  const operator = getRandomItemFrom(OPERATORS);
+  const operator = OPERATORS[getRandomArbitrary(0, OPERATORS.length - 1)];
   const question = `${firstNumber} ${operator} ${secondNumber}`;
 
   let answer; // eslint fix

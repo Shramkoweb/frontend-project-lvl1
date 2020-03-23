@@ -1,5 +1,5 @@
 import playGame from '../index.js';
-import { getRandomArbitrary } from '../utils.js';
+import getRandomArbitrary from '../utils.js';
 import { cons } from '../pairs.js';
 
 const NUMBER_RANGE = {
