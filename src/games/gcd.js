@@ -3,8 +3,8 @@ import { getRandomArbitrary } from '../utils.js';
 import { cons } from '../pairs.js';
 
 const NUMBER_RANGE = {
-  MIN: 1,
-  MAX: 100,
+  min: 1,
+  max: 100,
 };
 
 const RULE = 'Find the greatest common divisor of given numbers.';
@@ -19,8 +19,8 @@ const getGCD = (firstNumber, secondNumber) => { // return greatest common diviso
 };
 
 const generateConditions = () => {
-  const firstNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
-  const secondNumber = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const firstNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
+  const secondNumber = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
 
   const question = `${firstNumber} ${secondNumber}`;
   const answer = getGCD(firstNumber, secondNumber);

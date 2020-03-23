@@ -4,8 +4,8 @@ import { cons } from '../pairs.js';
 
 const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const NUMBER_RANGE = {
-  MIN: 0,
-  MAX: 20,
+  min: 0,
+  max: 20,
 };
 
 const isPrime = (number) => {
@@ -24,7 +24,7 @@ const isPrime = (number) => {
 };
 
 const generateConditions = () => {
-  const question = getRandomArbitrary(NUMBER_RANGE.MIN, NUMBER_RANGE.MAX);
+  const question = getRandomArbitrary(NUMBER_RANGE.min, NUMBER_RANGE.max);
   const answer = isPrime(question) ? 'yes' : 'no';
 
   return cons(question, answer);
