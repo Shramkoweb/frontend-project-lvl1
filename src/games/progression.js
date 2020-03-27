@@ -19,7 +19,7 @@ const generateConditions = () => {
   const start = getRandomArbitrary(1, PROGRESSION_LENGTH);
   const step = getRandomArbitrary(1, PROGRESSION_LENGTH);
   const progression = generateProgression(start, step, PROGRESSION_LENGTH);
-  const hiddenElementIndex = getRandomArbitrary(0, PROGRESSION_LENGTH);
+  const hiddenElementIndex = getRandomArbitrary(0, PROGRESSION_LENGTH - 1);
 
   const answer = progression.splice(hiddenElementIndex, 1, '..');
   const question = progression.join(' ');
