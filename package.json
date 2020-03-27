@@ -16,12 +16,12 @@
     "terminal"
   ],
   "bin": {
-    "brain-calc": "src/bin/brain-calc.js",
-    "brain-even": "src/bin/brain-even.js",
-    "brain-games": "src/bin/brain-games.js",
-    "brain-gcd": "src/bin/brain-gcd.js",
-    "brain-prime": "src/bin/brain-prime.js",
-    "brain-progression": "src/bin/brain-progression.js"
+    "brain-calc": "bin/brain-calc.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-games": "bin/brain-games.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-prime": "bin/brain-prime.js",
+    "brain-progression": "bin/brain-progression.js"
   },
   "author": "Serhii Shramko",
   "license": "ISC",
