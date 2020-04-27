@@ -1,48 +1,50 @@
-## Консольное приложение, содержащее набор мини-игр с общим движком.
+## A console application containing a set of mini-games with a single engine.
 ![](https://github.com/Shramkoweb/frontend-project-lvl1/workflows/Lint/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6bfe9a9986b82bffc5a1/maintainability)](https://codeclimate.com/github/Shramkoweb/frontend-project-lvl1/maintainability)
 
-## Установить все зависимости 
-+ npm install
+## Requirements
+ - Node 13+ version 
+ 
+## How to start
+ 1. `npm install`
+ 2. Write to console `node src/bin/pathToGame`
+ 3. Enjoy the game
 
-## Как запустить игры
-+ для корректной работы необходмо node 13 или новее
-+ node `src/bin/pathToGame`
+## Skills and technologies
+- Environment Setup (cl: gitHub Actions, npm, babel, eslint)
+- Base project structure & architecture
 
-## Навыки и технологии
-+ настройка окружения (cl: gitHub Actions, npm, babel, eslint)
-
-### Общие правила игры
-- 3 раунда.
-- При ошибке игра заканчивается.
-- Правильный ответ - переход к следуйщему вопросу.
+### Rules of the game
+- 3 rounds.
+- Wrong answer - Game Over.
+- Correct answer - step to next question.
 
 ---
 ### Brain-Even 
-Игра в которой нужно угадывать чётные и нечётные числа.
+Need to answer an even number.
 
 [![asciicast](https://asciinema.org/a/7IAtBF4S3AN0vvLIHgsnQDTAU.svg)](https://asciinema.org/a/7IAtBF4S3AN0vvLIHgsnQDTAU)
 
 ---
 ### Brain-Calc 
-Игра в которой нужно написать результат выражения.
+Need to write the result of an expression.
 
 [![asciicast](https://asciinema.org/a/pz5FPVpqo7Ba0w64bg4Bdfbti.svg)](https://asciinema.org/a/pz5FPVpqo7Ba0w64bg4Bdfbti)
 
 ---
 ### Brain-GCD 
-Игра в которой нужно найти наибольший делитель двух чисел.
+Need to find the greatest divisor.
 
 [![asciicast](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd.svg)](https://asciinema.org/a/OwdQEh2YC8bjtCuyHWhP7xxpd)
 
 ---
 ### Brain-Progression 
-Игра в которой нужно найти пропущенное число в арифметической прогрессии.
+Need to find the missing number in arithmetic progression.
 
 [![asciicast](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ.svg)](https://asciinema.org/a/imEftX83vvdmBX8GLUnIfVebQ)
 
 ---
 ### Brain-Prime 
-Игра в которой нужно угадать, "простое" ли число или нет.
+Need to guess whether the number is "prime" or not.
 
 [![asciicast](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw.svg)](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw)
