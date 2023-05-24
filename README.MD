@@ -48,3 +48,6 @@ Need to find the missing number in arithmetic progression.
 Need to guess whether the number is "prime" or not.
 
 [![asciicast](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw.svg)](https://asciinema.org/a/EEl0kVC0pGgB51KLfOvROyKiw)
+
+
+Created by [Serhii Shramko](https://shramko.dev/). This is my personal website and blog. 
